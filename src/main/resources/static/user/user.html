@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户</title>
+<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div>用户来了</div>
+	<script type="text/javascript">
+$(function(){
+	alert("666");
+	
+	$.ajax({
+		type: "GET",
+		url: "../getUser",
+		data: {"id":2},
+		dateType: "json",
+		success: function(result){
+			console.log(result);
+        	alert(JSON.stringify(result));
+ 				}
+		   }		
+	); 
+})
+</script>
+</body>
+</html>

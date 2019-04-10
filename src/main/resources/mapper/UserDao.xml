@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxd.mydemo.dao.UserDao">
+
+	<insert id="insert">
+		INSERT INTO
+		SY_USER(
+		U_ID,
+		U_NAME,
+		U_PWD,
+		U_PHONE,
+		U_SEX,
+		U_AGE,
+		U_CREATE_DATE,
+		U_DELETE_DATE,
+		U_STATUS)VALUES(
+		#{uId},
+		#{uName},
+		#{uPwd},
+		#{uPhone},
+		#{uSex},
+		#{uAge},
+		#{uCreateDate},
+		#{uDeleteDate},
+		#{uStatus}
+		)
+	</insert>
+
+</mapper>
